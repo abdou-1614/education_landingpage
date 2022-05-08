@@ -3,15 +3,112 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+*, *::before, *::after{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Jost', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track {background: hsl(0, 0%, 80%);}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: hsl(15, 100%, 55%);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(217, 100%, 50%);
+}
+:root{
+  --fs-1: 38px;
+  --fs-2: 35px;
+  --fs-3: 30px;
+  --fs-4: 22px;
+  --fs-5: 20px;
+  --fs-6: 15px;
+  
+  --fw-5: 500;
+  --fw-6: 600;
+  --fw-7: 700;
+  --fw-8: 800;
+  --fw-9: 900;
 
+  --default-transition: 0.25s ease;
+}
+li {
+  list-style: none;
+}
 a {
   text-decoration: none;
+  font: inherit;
+}
+button {
+  cursor: pointer;
+  border: none;
+  font: inherit;
+}
+
+.item a {
+  padding: 10px;
+  font-size: var(--fs-5);
+  font-weight: var(--fs-6);
+  color: hsl(229, 84%, 12%);
+  transition: var(--default-transition);
+}
+.item a:hover {color:hsl(15, 100%, 55%)}
+.active {
+  animation: menuPopup 0.5s ease forwards;
+  pointer-events: all;
+}
+@keyframes menuPopup {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.btn {
+  position: relative;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-5);
+  border-radius: 8px;
+  padding: 20px 45px;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.btn-prime {
+ background: hsl(15, 100%, 55%);
+}
+.btn .anime {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  transform: translateY(-50%);
+  transition: var(--default-transition);
+} 
+.btn:hover .anime {
+  right: -2px;
+  width: 102%;
+  height: 102%;
+}
+
+.btn-prime .anime {
+  background: hsl(229, 84%, 12%);
 }
