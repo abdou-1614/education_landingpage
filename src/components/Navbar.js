@@ -9,6 +9,25 @@ const Navbar = () => {
       <div>
         <img src={logo} alt='logo' />
       </div>
+      <article className='hidden md:block static bg-trasparent scale-100'>
+        <ul className='flex items-center gap-14 font-semibold '>
+        <li className='transition delay-50 ease hover:text-default'>
+        <a href='home'>Home</a>
+        </li>
+        <li className='transition delay-50 hover:text-default'>
+        <a href='about'>About Us</a>
+        </li>
+        <li className='transition delay-50 hover:text-default'>
+        <a href='course'>Course</a>
+        </li>
+          <li className='transition delay-50 hover:text-default'>
+          <a href='blog'>Blog</a>
+          </li>
+          <li className='transition delay-50 hover:text-default'>
+          <a href='contect'>Contact</a>
+          </li>
+        </ul>
+      </article>
       {toggel && (
         <ul className='md:hidden active absolute right-8 left-8 top-[calc(100%+40px)] text-center bg-white1 rounded-lg shadow-md p-8' >
         <li className='item pb-2.5'>
