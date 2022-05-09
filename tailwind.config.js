@@ -25,6 +25,9 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(ellipse at center, hsla(217, 100%, 50%, 0.3) transparent 70%)'
+      },
+      dropShadow: {
+        '3xl': '0 10px 20px hsla(0,0%,0%,0.2)'
       }
     },
   },

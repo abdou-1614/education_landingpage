@@ -37,19 +37,19 @@ const Home = () => {
         <p className='relative z-10'>Explore Courses</p>
         <span className='anime'></span>
       </button>
-      <button className='btn-secondary btn md:block py-3 px-6 lg:py-5 lg:px-11 '>
+      <button className='btn-secondary btn md:block py-3 px-6 lg:py-5 lg:px-11'>
         <p className='relative z-10'>Contact Us</p>
         <span className='anime'></span>
       </button>
       </div>
-      <article className='relative z-10'>
-        <div>
-          <img src={bannerBg} alt='banner' />
-          <img src={bannerImg} alt='bannerimg' />
-          <img src={aliment1} alt='aliment1' width={250} />
-          <img src={aliment2} alt='aliment2' width={240}/>
-          <img src={aliment3} alt='aliment3' width={195}/>
-          <img src={aliment4} alt='aliment4' />
+      <article className='right'>
+        <div className='box'>
+          <img src={bannerBg} alt='banner' className='bg-shape'/>
+          <img src={bannerImg} alt='bannerimg' className='banner'/>
+          <img src={aliment1} alt='aliment1' width={250} className='top-[200px] left-[20px] z-10 drop-shadow-3xl'/>
+          <img src={aliment2} alt='aliment2' width={240} className='hidden z-10 drop-shadow-3xl'/>
+          <img src={aliment3} alt='aliment3' width={195} className='hidden z-10 drop-shadow-3xl'/>
+          <img src={aliment4} alt='aliment4' className='top-[60px] right-5 drop-shadow-[0_8px_30px_hsla(350,100%,68%,0.5)] z-10'/>
         </div>
       </article>
     </section>
