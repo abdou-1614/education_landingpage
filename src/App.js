@@ -4,6 +4,7 @@ function App() {
   return (
     <div className='bg-white1 max-w-[1440px] m-auto overflow-hidden ' >
       <Navbar/>
+      <Home/>
     </div>
   );
 }

@@ -21,7 +21,10 @@ module.exports = {
         'ty': '80px',
       },
       boxShadow: {
-        primary: '0 10px 20px -5px hsla(0, 0%, 0%, 0.03)'
+        primary: '0 10px 20px -5px hsla(0, 0%, 0%, 0.03)',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(ellipse at center, hsla(217, 100%, 50%, 0.3) transparent 70%)'
       }
     },
   },

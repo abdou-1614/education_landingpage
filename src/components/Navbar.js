@@ -10,7 +10,7 @@ const Navbar = () => {
         <img src={logo} alt='logo' />
       </div>
       <article className='hidden md:block static bg-trasparent scale-100'>
-        <ul className='flex items-center gap-14 font-semibold '>
+        <ul className='flex items-center gap-3 md:gap-9 lg:gap-14 font-semibold text-lg lg:text-xl '>
         <li className='transition delay-50 ease hover:text-default'>
         <a href='home'>Home</a>
         </li>
@@ -47,8 +47,8 @@ const Navbar = () => {
           </li>
     </ul>
       )}
-      <button className='md:hidden bg-default h-[31px] w-[31px] rounded-lg ' onClick={() => setToggel(!toggel)} ><span>{toggel ? <AiOutlineClose className='text-white2 text-3xl font-[900] right-1'/> : <RiMenuFill className='text-white1 text-3xl font-[900]'/>}</span></button>
-      <button className='btn btn-prime hidden md:block'>
+      <button className='md:hidden bg-default h-[31px] -translate-x-0.5 w-[31px] rounded-lg ' onClick={() => setToggel(!toggel)} ><span>{toggel ? <AiOutlineClose className='text-white2 translate-x-px text-3xl font-[900] right-1'/> : <RiMenuFill className='text-white1 translate-x-px text-3xl font-[900]'/>}</span></button>
+      <button className='btn btn-prime hidden md:block py-3 px-6 lg:py-5 lg:px-11 '>
         <p className='relative z-10'>Try For Free</p>
         <span className='anime'></span>
       </button>
