@@ -154,10 +154,25 @@ button {
   z-index: 1;
 }
 
-@media screen and (min-width: 992px) {
-  /* .home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  } */
+.category {
+  border: 1px solid hsl(0, 0%, 67%);
+  @apply flex items-center gap-5 p-7 rounded-[8px];
+  transition: var(--default-transition);
+}
+
+.category:hover {
+  border-color: hsl(15, 100%, 55%);
+  box-shadow: 0 10px 50px -20px hsl(15, 100%, 55%);
+  @apply bg-default;
+}
+.cat-icon {
+  @apply w-[50px]
+}
+.cat-icon.hove,
+.category:hover .cat-icon.default {
+  @apply hidden
+}
+.cat-icon.default,
+.category:hover .cat-icon.hove {
+  @apply block
 }
