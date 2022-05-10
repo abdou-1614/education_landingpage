@@ -47,7 +47,7 @@ const Navbar = () => {
           </li>
     </ul>
       )}
-      <button className='md:hidden bg-default h-[31px] -translate-x-0.5 w-[31px] rounded-lg ' onClick={() => setToggel(!toggel)} ><span>{toggel ? <AiOutlineClose className='text-white2 translate-x-px text-3xl font-[900] right-1'/> : <RiMenuFill className='text-white1 translate-x-px text-3xl font-[900]'/>}</span></button>
+      <button className='md:hidden bg-default h-[31px] -translate-x-0.5 w-[32px] rounded-lg ' onClick={() => setToggel(!toggel)} ><span>{toggel ? <AiOutlineClose className='text-white2 translate-x-px text-3xl font-[900] right-1'/> : <RiMenuFill className='text-white1 translate-x-px text-3xl font-[900]'/>}</span></button>
       <button className='btn btn-prime hidden md:block py-3 px-6 lg:py-5 lg:px-11 '>
         <p className='relative z-10'>Try For Free</p>
         <span className='anime'></span>

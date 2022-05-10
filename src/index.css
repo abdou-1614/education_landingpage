@@ -153,3 +153,11 @@ button {
   transform: translateX(-50%);
   z-index: 1;
 }
+
+@media screen and (min-width: 992px) {
+  /* .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  } */
+}
