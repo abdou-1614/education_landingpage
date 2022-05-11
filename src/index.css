@@ -176,3 +176,18 @@ button {
 .category:hover .cat-icon.hove {
   @apply block
 }
+
+.left .img-box {
+  @apply relative
+}
+.left img {
+  @apply absolute
+}
+
+.left .img {
+  @apply relative z-20
+}
+
+/* .about-ul li:not(:last-child) {
+  margin-bottom: 30px;
+} */
