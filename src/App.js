@@ -7,6 +7,7 @@ function App() {
       <Home/>
       <Category/>
       <About/>
+      <Course/>
     </div>
   );
 }

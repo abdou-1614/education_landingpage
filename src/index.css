@@ -187,7 +187,32 @@ button {
 .left .img {
   @apply relative z-20
 }
-
-/* .about-ul li:not(:last-child) {
-  margin-bottom: 30px;
-} */
+.course-card{
+  @apply bg-white1 rounded-[8px] overflow-hidden;
+  box-shadow: 0 10px 50px hsla(0, 0%, 0%, 0.1);
+}
+.course-banner {
+  @apply relative overflow-hidden
+}
+.course-banner img {
+  @apply w-full h-full object-cover;
+  transition: var(--default-transition);
+}
+.course-card:hover .course-banner img {
+  transform: scale(1.05);
+}
+.course-banner .course-tag {
+  @apply absolute bottom-5 left-[30px] flex items-center gap-5 text-ultra-blue
+}
+.course-banner .bad {
+  @apply text-[15px] rounded-[5px] py-2 px-5 text-white1  
+}
+.course-banner .orange {
+  @apply bg-default
+} 
+.course-banner .blue {
+  @apply bg-ultra-blue
+}
+.course-content h3 {
+  @apply text-ultra-blue text-lg font-semibold
+}
