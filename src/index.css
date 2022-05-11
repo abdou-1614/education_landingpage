@@ -214,5 +214,52 @@ button {
   @apply bg-ultra-blue
 }
 .course-content h3 {
-  @apply text-ultra-blue text-lg font-semibold
+  @apply text-ultra-blue text-lg font-semibold mb-5
+}
+.course-card .course-content {
+  @apply p-[30px] pb-5
+}
+.course-card h3 a {
+  @apply text-exford text-[22px] font-[800] leading-tight;
+  transition: var(--default-transition);
+}
+.course-card:hover h3 a {
+  @apply text-default
+}
+.course-card .wrapper {
+  @apply flex justify-between items-center
+}
+.course-card .bo {
+  @apply pb-[30px] mb-[15px];
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+.course-card .author {
+  @apply flex items-center gap-5
+}
+.course-card .author img {
+  @apply rounded-full;
+  border: 3px solid hsl(0, 0%, 100%);
+  box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.2);
+}
+.course-card .author a {
+  @apply text-[15px] text-sonic;
+  transition: var(--default-transition);
+}
+.course-card .author a:hover {
+  @apply text-exford;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.2);
+}
+.course-card .rating {
+  @apply flex items-center gap-2
+}
+.course-card .rating .icon {
+  font-size: 20px;
+  color: hsl(45, 100%, 51%);
+}
+.course-card .enroll p,
+.course-card .rating p {
+  @apply text-[15px] text-sonic
+}
+.course-card .price {
+  @apply text-default font-[800] text-[20px]
 }
