@@ -8,6 +8,7 @@ function App() {
       <Category/>
       <About/>
       <Course/>
+      <Events/>
     </div>
   );
 }

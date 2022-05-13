@@ -224,7 +224,7 @@ const Course = () => {
           </div>
         </div>
       </div>
-      <button className='btn btn-prime py-3 px-6 lg:py-5 lg:px-11 '>
+      <button className='btn btn-prime py-3 px-6 lg:py-5 lg:px-11 m-auto block'>
           <p className='relative z-10'>View All Course</p>
           <span className='anime'></span>
         </button>

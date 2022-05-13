@@ -263,3 +263,51 @@ button {
 .course-card .price {
   @apply text-default font-[800] text-[20px]
 }
+.course-card .enroll {
+  @apply flex items-center gap-3
+}
+.course-card .enroll .icon-user {
+  background-color: hsl(138, 59%, 91%);
+  @apply w-[30px] h-[30px] flex items-center justify-center rounded-full;
+}
+
+.event-card {
+  border-right: 3px solid transparent;
+  @apply py-[35px] px-[25px] bg-white1 shadow-md rounded-[8px];
+  transition: var(--default-transition);
+  cursor: pointer;
+}
+.event-card .content-left {
+  @apply w-full text-center pb-[15px] mb-[25px];
+}
+.event-card .content-left .day {
+  @apply text-[30px] font-[800] text-blue-cray
+}
+.event-card .content-left .month {
+  @apply text-[16px] font-[600] text-blue-cray
+}
+.event-card .should {
+  @apply flex justify-center mb-3
+}
+.event-card .should p {
+  @apply text-sonic text-[15px]
+}
+.event-card .should .time {
+  @apply pr-5 mr-5 mb-2;
+  box-shadow: 4px 0 0 -3px hsl(0, 0%, 80%);
+}
+.event-card .e-name {
+  display: block;
+  font-size: 27px;
+  font-weight: 900;
+  color: hsl(229, 84%, 12%);
+  text-align: center;
+  transition: var(--default-transition);
+}
+
+.event-card:hover {
+  border-color: hsl(15, 100%, 55%);
+}
+.event-card:hover .e-name {
+  color: hsl(15, 100%, 55%);
+}
