@@ -9,6 +9,7 @@ function App() {
       <About/>
       <Course/>
       <Events/>
+      <Features/>
     </div>
   );
 }

@@ -311,3 +311,14 @@ button {
 .event-card:hover .e-name {
   color: hsl(15, 100%, 55%);
 }
+
+.fea-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.fea-items:not(:last-child) { margin-bottom: 30px; }
+
+.fea-items .item1 { background: hsl(222, 87%, 56%);}
+.fea-items .item2 { background: hsl(336, 73%, 50%);  }
+.fea-items .item3 { background: hsl(265, 83%, 44%); }
